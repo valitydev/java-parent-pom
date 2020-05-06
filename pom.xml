@@ -6,26 +6,8 @@
     <packaging>pom</packaging>
     <groupId>com.rbkmoney</groupId>
     <artifactId>parent_test</artifactId>
-    <version>2.0.9</version>
+    <version>2.0.10</version>
     <description>RBKmoney parent pom</description>
-
-    <!-- <distributionManagement>
-        <downloadUrl>http://java-nexus.msk1.rbkmoney.net:8081/nexus/content/groups/public</downloadUrl>
-        <repository>
-            <uniqueVersion>false</uniqueVersion>
-            <id>releases</id>
-            <name>RBKmoney releases repository</name>
-            <url>http://java-nexus.msk1.rbkmoney.net:8081/nexus/content/repositories/releases</url>
-            <layout>default</layout>
-        </repository>
-        <snapshotRepository>
-            <uniqueVersion>true</uniqueVersion>
-            <id>snapshots</id>
-            <name>RBKmoney snapshots repository</name>
-            <url>http://java-nexus.msk1.rbkmoney.net:8081/nexus/content/repositories/snapshots</url>
-            <layout>default</layout>
-        </snapshotRepository>
-    </distributionManagement> -->
 
     <build>
         <plugins>
@@ -55,10 +37,10 @@
                         <encoding>UTF-8</encoding>
                     </configuration>
                 </plugin>
-                <!-- <plugin>
-                <artifactId>maven-deploy-plugin</artifactId>
+                <plugin>
+                  <artifactId>maven-deploy-plugin</artifactId>
                   <version>2.8.2</version>
-                </plugin> -->
+                </plugin>
             </plugins>
         </pluginManagement>
     </build>
