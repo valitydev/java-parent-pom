@@ -5,7 +5,7 @@
   <packaging>pom</packaging>
   <groupId>com.rbkmoney</groupId>
   <artifactId>parent</artifactId>
-  <version>1.0.4-SNAPSHOT</version>
+  <version>0.0.1</version>
   <name>RBKmoney parent</name>
   <description>RBKmoney parent pom</description>
   <url>https://github.com/rbkmoney/java-parent-pom</url>
@@ -54,7 +54,7 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-source-plugin</artifactId>
-            <version>3.0.1</version>
+            <version>3.2.1</version>
             <executions>
               <execution>
                 <id>attach-sources</id>
@@ -98,7 +98,7 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-source-plugin</artifactId>
-            <version>3.0.1</version>
+            <version>3.2.1</version>
             <executions>
               <execution>
                 <id>attach-sources</id>
@@ -111,6 +111,7 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-javadoc-plugin</artifactId>
+            <version>3.2.0</version>
             <executions>
               <execution>
                 <id>attach-javadocs</id>
