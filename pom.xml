@@ -5,7 +5,7 @@
   <packaging>pom</packaging>
   <groupId>com.rbkmoney</groupId>
   <artifactId>parent</artifactId>
-  <version>1.0.4</version>
+  <version>1.0.4-SNAPSHOT</version>
   <name>RBKmoney parent</name>
   <description>RBKmoney parent pom</description>
   <url>https://github.com/rbkmoney/java-parent-pom</url>
@@ -34,6 +34,12 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <pubRepoId>ossrh</pubRepoId>
+    <pubRepo>https://oss.sonatype.org/content/repositories/releases</pubRepo>
+    <pubSnapRepoId>ossrh</pubSnapRepoId>
+    <pubSnapRepo>https://oss.sonatype.org/content/repositories/snapshots</pubSnapRepo>
+    <pubStagingRepoId>ossrh</pubStagingRepoId>
+    <pubStagingRepo>https://oss.sonatype.org/</pubStagingRepo>
   </properties>
 
   <profiles>
@@ -49,6 +55,38 @@
           <url>${privRepo}</url>
         </repository>
       </distributionManagement>
+      <repositories>
+        <repository>
+          <id>${privRepoId}</id>
+          <url>${privRepo}</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+        </repository>
+        <repository>
+          <id>${privSnapRepoId}</id>
+          <url>${privSnapRepo}</url>
+          <releases>
+            <enabled>false</enabled>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </repository>
+        <repository>
+          <id>${pubSnapRepoId}</id>
+          <url>${pubSnapRepo}</url>
+          <releases>
+            <enabled>false</enabled>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </repository>
+      </repositories>
       <build>
         <plugins>
           <plugin>
@@ -114,6 +152,18 @@
           <url>${pubRepo}</url>
         </repository>
       </distributionManagement>
+      <repositories>
+        <repository>
+          <id>${pubSnapRepoId}</id>
+          <url>${pubSnapRepo}</url>
+          <releases>
+            <enabled>false</enabled>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </repository>
+      </repositories>
       <build>
         <plugins>
           <plugin>
