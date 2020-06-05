@@ -8,6 +8,6 @@ build('java-parent-pom', 'docker-host') {
         javaLibPipeline = load("build_utils/jenkins_lib/pipeJavaLib.groovy")
     }
 
-    def buildImageTag = "80c38dc638c0879687f6661f4e16e8de9fc0d2c6"
+    def buildImageTag = "442c2c274c1d8e484e5213089906a4271641d95e"
     javaLibPipeline(buildImageTag)
 }
